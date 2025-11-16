@@ -1,75 +1,6 @@
-
-//1️⃣ Find Duplicates in an Array
-const arr = [1, 2, 3, 2, 4, 5, 5];
-const duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
-console.log(duplicates); // [2, 5]
-//Concept: Array iteration, filter(), indexOf()
-
-//2️⃣ Remove Duplicates from an Array
-const arr = [1, 2, 3, 2, 4, 5, 5];
-const unique = [...new Set(arr)];
-console.log(unique); // [1, 2, 3, 4, 5]
-
-//Set object — ensures only unique values.
-//Reverse a String Without Built-in Reverse.
-
-const str = "automation";
-let reversed = "";
-for (let i = str.length - 1; i >= 0; i--) {
-  reversed += str[i];
-}
-console.log(reversed); // "noitamotua"
-
-
-//String manipulation & loops.
-//Check if a String is a Palindrome
-const str = "madam";
-const isPalindrome = str === str.split('').reverse().join('');
-console.log(isPalindrome); // true
-
 //String and Array methods.
-//Find Maximum and Minimum in an Array
-const arr = [10, 5, 8, 20, 3];
-console.log("Max:", Math.max(...arr)); // 20
-console.log("Min:", Math.min(...arr)); // 3
-
-//Spread operator, Math functions.
-
-//Count Occurrences of Each Element
-const arr = ['a', 'b', 'a', 'c', 'b', 'a'];
-const count = {};
-arr.forEach(item => {
-  count[item] = (count[item] || 0) + 1;
-});
-console.log(count); // { a: 3, b: 2, c: 1 }
-
 //Concept: Object manipulation and frequency count.
-
-//7️⃣ Swap Two Variables Without Third Variable
-let a = 10, b = 20;
-[a, b] = [b, a];
-console.log(a, b); // 20 10
-
 //Destructuring assignment.
-
-//Find Missing Number in a Sequence
-const arr = [1, 2, 3, 5];
-const n = 5; // expected range 1–5
-const total = (n * (n + 1)) / 2;
-const sum = arr.reduce((a, b) => a + b, 0);
-console.log("Missing Number:", total - sum); // 4
-
-//Mathematical formula & reduce().
-
-//Reverse Each Word in a Sentence
-const str = "Test Automation Engineer";
-const reversed = str.split(' ')
-  .map(word => word.split('').reverse().join(''))
-  .join(' ');
-console.log(reversed); // "tseT noitamotuA reenignE"
-
-//Chaining split(), map(), and join().
-
 //Promise Example (Async Simulation)
 function fetchData() {
   return new Promise((resolve) => {
@@ -86,29 +17,13 @@ displayData();
 
 //Promises, async/await — very common in automation test APIs or UI waits.
 
-//Filter Even and Odd Numbers
-const arr = [1, 2, 3, 4, 5, 6];
-const even = arr.filter(n => n % 2 === 0);
-const odd = arr.filter(n => n % 2 !== 0);
-console.log("Even:", even); // [2,4,6]
-console.log("Odd:", odd);   // [1,3,5]
-
 //1️⃣2️⃣ Flatten a Nested Array
 const arr = [1, [2, [3, 4], 5], 6];
 const flat = arr.flat(Infinity);
 console.log(flat); // [1, 2, 3, 4, 5, 6]
-
 //Array.flat() — handy in handling nested test data.
-//1️⃣3️⃣ Remove White Spaces Without Built-in Trim
-const str = "  Hello World  ";
-let result = "";
-for (let i = 0; i < str.length; i++) {
-  if (str[i] !== ' ') result += str[i];
-}
-console.log(result); // "HelloWorld"
 
 //String traversal — basic logic test.
-
 //Debounce Function (Interview Advanced)
 function debounce(fn, delay) {
   let timer;
@@ -124,23 +39,7 @@ log(); // Only runs once after 1 second (not multiple times)
 
 //Used in test frameworks to avoid repeated events — frequent advanced interview question.
 
-//1️⃣5️⃣ Find Sum Using Reduce
-const arr = [1, 2, 3, 4, 5];
-const sum = arr.reduce((a, b) => a + b, 0);
-console.log(sum); // 15
-
 //reduce() — very common for data validation or aggregation logic.
-
-"Reverse a number"
-
-"Find factorial using recursion"
-
-"Check if two strings are anagrams"
-
-"Difference between == and ==="
-
-"How to handle asynchronous waits in JS?"
-
 
 // 1️⃣ What is the difference between var, let, and const?
 var a = 10;   // function-scoped
@@ -150,11 +49,8 @@ const c = 30; // block-scoped and cannot be reassigned
 /*Key Points:
 
 var is function-scoped and hoisted.
-
 let and const are block-scoped.
-
 const variables cannot be reassigned.
-
 Prefer let and const in automation code to avoid scope leaks. */
 
 ///2️⃣ What are Arrow Functions and Why Use Them?
@@ -167,7 +63,7 @@ console.log(add(2, 3)); // 5
 
 //3️⃣ Difference between == and ===
 console.log(5 == "5");  // true (type conversion)
-console.log(5 === "5"); // false (strict check)
+console.log(5 === "5"); // false (strict check) type and value both checked most prefered 
 
 //Use in Tests:
 //Always use === to avoid false positives in assertions.
@@ -190,7 +86,7 @@ let fetchData = new Promise((resolve) => {
 fetchData.then(result => console.log(result));
 
 //Promises handle asynchronous operations (like API calls or UI waits).
-//Convert Promise Chain → Async/Await
+//Convert Promise Chain → Async/Await most imp imp practical alysis 
 async function runTest() {
   const data = await fetchData();
   console.log("Result:", data);
@@ -260,7 +156,7 @@ const doubled = nums.map(n => n * 2);
 console.log(even, doubled); // [2,4] [2,4,6,8,10]
 //👉 Use in Tests: Filter or transform test data arrays dynamically.
 
-🧠 1️⃣4️⃣ What is Hoisting?
+//🧠 1️⃣4️⃣ What is Hoisting?
 console.log(x); // undefined
 var x = 5;
 
