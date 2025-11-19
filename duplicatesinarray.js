@@ -52,6 +52,7 @@ Value	Current index	First index (indexOf)	Duplicate?
 So duplicates are [2, 5].
 
 */
+//2️⃣ Remove Duplicates from an Array
 const arr = [1, 2, 3, 2, 4, 5, 5];
 const duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
 console.log(duplicates); // [2, 5]
@@ -65,10 +66,63 @@ const result = add(2, 3);
 console.log(result);
 
 
-//2️⃣ Remove Duplicates from an Array
+//Set object — ensures only unique values.
 //const arr1 = [1, 2, 3, 2, 4, 5, 5];
 const arr1 = [1, 2, 3, 2, 4, 5, 5];
 const unique = [...new Set(arr1)];
-console.log(unique); // [1, 2, 3, 4, 5]
+console.log(unique); // [1, 2, 3, 4, 5] //return only unique values from the array with set concept
 
-//Set object — ensures only unique values.
+//Arithmetic Operators in JavaScript and unary operators role in javascript 
+let a=3;
+let b=2;
+console.log("a+b = ", a+b);
+console.log("a++ = ", a++);//3 post increment operator
+console.log("a = ", a);//4
+console.log("b++ = ", b++);//2 post increment operator
+console.log("b = ", b);//3
+
+console.log("++a = ", ++a);5// pre increment operator
+console.log("a = ", a);//5
+console.log("++b = ", ++b);4// pre increment operator
+console.log("b = ", b);//4
+
+console.log("a-- = ", a--);//5 post decrement operator
+console.log("a = ", a);//4
+console.log("b-- = ", b--);//4 post decrement operator
+console.log("b = ", b);//3
+
+console.log("--a = ", --a);// 3 pre decrement operator
+console.log("a = ", a);//3
+console.log("--b = ", --b);//2 pre decrement operator
+console.log("b = ", b);//2
+
+console.log("a ** b = ", a**b);//9
+console.log("a=",a,"b=",b);//a=3 b=2
+
+//ternary operator and switch case in javascript
+let age=18;
+age >=18 ? console.log("Eligible to vote") : console.log("Not eligible to vote");
+
+//switch case example
+let fruit = "apple";
+switch (fruit) {
+  case "banana":
+    console.log("Yellow");
+    break;
+
+  case "apple":
+    console.log("Red");
+    break;
+
+  default:
+    console.log("Unknown");
+}
+
+//Check whether a number is divisible by 5 or not
+let num=25;
+console.log("Enter the number");
+if(num%5===0)
+  console.log("Divisible by 5");
+else
+  console.log("Not divisible by 5");
+

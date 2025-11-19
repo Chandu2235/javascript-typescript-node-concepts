@@ -75,7 +75,6 @@ function greet(name, callback) {
 }
 greet("Tester", () => console.log("Welcome to Automation!"));
 
-
 //A callback is a function passed into another function to execute later — often used in waits or async test hooks.
 
 //5️⃣ What are Promises?
@@ -222,4 +221,5 @@ Destructuring	Simplify data extraction from responses
 Array Methods (map, filter, reduce)	Handle lists of elements/test data
 Template Literals	Dynamic selectors & logs
 try...catch	Graceful error handling during automation */
+
 
