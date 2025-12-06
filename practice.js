@@ -1,42 +1,23 @@
+// console.log('hello world');
+// var name = true;
+// console.log(name);
+let city = "New York";
+console.log(city);
+console.log(typeof city) // Output: New York
 
-const obj={name:"Chandu", age:30,show: function() {
-    console.log(this.name); //When called as a method (obj.show()), this refers to the object before the dot.
-  }
-};
-obj.show(); 
-obj.age=31; //allowed
-console.log(obj); 
+// let score = 10;
+// score = 20;
+// console.log(score); // Output: 20
 
-//const http = require('node:http');
+// const pi = 3.14;
+// pi = 34;
+// console.log(pi); // Output: 3.14
 
-// server.mjs
 
-import { createServer } from 'node:http';
-const hostname = '127.0.0.1';
-const port = 3000;
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+let car = null;
+console.log(car);  // Output: null
+console.log(typeof car);
 
-// run with `node server.mjs`
-
-// tests.mjs
-import assert from 'node:assert';
-import test from 'node:test';
-
-test('that 1 is equal 1', () => {
-  assert.strictEqual(1, 1);
-});
-
-test('that throws as 1 is not equal 2', () => {
-  // throws an exception because 1 != 2
-  assert.strictEqual(1, 2);
-});
-
-// run with `node tests.mjs`
-
+let salary;
+console.log(salary);  // Output: undefined
+console.log(typeof salary);  // Output: undefined

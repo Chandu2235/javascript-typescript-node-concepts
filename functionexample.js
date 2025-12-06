@@ -1,14 +1,13 @@
-const addi = (a, b) => a + b;
-console.log(addi(2, 3));
-function add(a,b)
-{
-    return a + b;
+function testScope() {
+  if (true) {
+    var oldVar = "I am a var"; // function-scoped
+    let newLet = "I am a let"; // block-scoped
+    const constant = "I am a const"; // block-scoped
+  }
+
+  console.log(oldVar);  // Output: I am a var
+  console.log(newLet);  // Error: newLet is not defined
+  console.log(constant); // Error: constant is not defined
 }
-let addition=add(2,3);
-console.log("Addition Result: " + addition);
 
-// console.log(add(2,3));
-// function add(a,b){ return a+b; }
-
-//console.log(addt(2,3));
-//let addt = function(a,b){ return a+b; };
+testScope();
