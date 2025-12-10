@@ -12,3 +12,12 @@ async function showName() {
 
 console.log("Still Waiting..");
 showName();
+
+
+//🧠 7️⃣ How do you handle Asynchronous Operations in Tests?
+//✅ Using async / await
+
+await page.goto('https://example.com');
+const title = await page.title();
+console.log(title);
+//👉 Used in Playwright, WebDriverIO, Cypress, etc.

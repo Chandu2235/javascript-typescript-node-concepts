@@ -5,6 +5,7 @@ arr.forEach(item => {
   count[item] = (count[item] || 0) + 1;
 });
 console.log(count); // { a: 3, b: 2, c: 1 }
+//👉 Concept: Object manipulation and frequency count.
 
 
 //✅ 4. Character Frequency

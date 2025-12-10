@@ -56,6 +56,10 @@ So duplicates are [2, 5].
 const arr = [1, 2, 3, 2, 4, 5, 5];
 const duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
 console.log(duplicates); // [2, 5]
+//👉 Concept: Array iteration, filter(), indexOf()
+//✅ Common question to test logic thinking.
+
+
 
 function add(a, b) {
   const sum = a + b;
@@ -136,3 +140,10 @@ function flatten(arr) {
   return arr.reduce((acc, val) =>
     acc.concat(Array.isArray(val) ? flatten(val) : val), []);
 }
+
+
+//🧠 2️⃣ Remove Duplicates from an Array
+const arr12 = [1, 2, 3, 2, 4, 5, 5];
+const unique1 = [...new Set(arr12)];
+console.log(unique); // [1, 2, 3, 4, 5]
+//Concept: Set object — ensures only unique values

@@ -39,3 +39,13 @@ function reverseString(s) {
   }
   return s;
 }
+
+
+//🧠 3️⃣ Reverse a String Without Built-in Reverse
+const string = "automation";
+let reversedString = "";
+for (let i = string.length - 1; i >= 0; i--) {
+  reversedString += string[i];
+}
+console.log(reversedString); // "noitamotua"
+//👉 Concept: String manipulation & loops.

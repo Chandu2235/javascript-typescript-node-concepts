@@ -3,7 +3,7 @@ function fetchDataFromServer() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const success = false; // Simulate a successful server response
-      
+
       if (success) {
         resolve("Data successfully fetched!"); // Resolve with data
       } else {
@@ -26,3 +26,12 @@ async function fetchData() {
 
 // Call the async function
 fetchData();
+
+//🧠 5️⃣ What are Promises?
+let fetchData = new Promise((resolve) => {
+  setTimeout(() => resolve("Data fetched"), 1000);
+});
+
+fetchData.then(result => console.log(result));
+//👉 Concept:
+//Promises handle asynchronous operations (like API calls or UI waits).

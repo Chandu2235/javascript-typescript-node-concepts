@@ -139,3 +139,8 @@ const double = multiply(2); // Partially applied
 
 console.log("Double 5:", double(5)); // 10
 console.log("Multiply 3 * 4:", multiply(3)(4)); // 12
+
+
+/*
+
+*/

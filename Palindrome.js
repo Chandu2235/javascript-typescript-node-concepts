@@ -3,3 +3,5 @@
 const str = "madam";
 const isPalindrome = str === str.split('').reverse().join('');
 console.log(isPalindrome); // true
+
+//👉 Concept: String and Array methods.

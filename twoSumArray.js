@@ -9,15 +9,22 @@
     - If a pair adds up to the target, return their indices
 */
 
-const num = [ 2,5,6,7];
-const target = 9 ; // output as [0,3]
-function twoSum( num,target){
-    for (let i = 0 ; i < num.length ; i++) {
-        for (let j =0 ; j < num.length ; j++){
-            if(num[i] + num[j] === target) {
-                return[i,j];
+const num = [2, 5, 6, 7];
+const target = 9; // output as [0,3]
+function twoSum(num, target) {
+    for (let i = 0; i < num.length; i++) {
+        for (let j = 0; j < num.length; j++) {
+            if (num[i] + num[j] === target) {
+                return [i, j];
             }
         }
     }
 }
-console.log(twoSum(num,target));
+console.log(twoSum(num, target));
+
+
+//🧠 1️⃣2️⃣ Flatten a Nested Array
+const arr = [1, [2, [3, 4], 5], 6];
+const flat = arr.flat(Infinity);
+console.log(flat); // [1, 2, 3, 4, 5, 6]
+//👉 Concept: Array.flat() — handy in handling nested test data.
